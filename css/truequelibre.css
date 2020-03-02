@@ -37,11 +37,19 @@
        padding-bottom: 12px;
    }
 
+   .menu > .container:first-child {
+       display: block;
+    }
+
+    .menu > .container:last-child {
+       display: none;
+    }
+
    .menu > .container > .row:first-child {
-       margin-bottom: 18px;
+       margin-bottom: 20px;
    }
 
-   .menu .logo {
+   .menu > .container > .row > .col-2 > .logo {
        width: 150px;
    }
 
@@ -49,7 +57,7 @@
        width: 100%;
    }
 
-   .menu .search-bar input[type="text"]{
+   .menu > .container > .row > .search-bar > form > input[type="text"]{
         width: 90%;
         height: 40px;
         float: left;
@@ -62,11 +70,11 @@
         font-size: 14px;
     }
 
-    .menu .search-bar input[type="text"]::placeholder {
+    .menu > .container > .row > .search-bar > form > input[type="text"]::placeholder {
         color: #c4c4c4
     }
 
-    .menu .search-bar button{
+    .menu > .container > .row > .search-bar > form > button {
         width: 40px;
         height: 40px;
         box-shadow: 0 1px 2px 0 #00000040;
@@ -77,39 +85,255 @@
         cursor: pointer;
     }
 
-    .menu .offer-text {
+    .menu > .container > .row > .offer-text {
         padding-top: 8px;
     }
 
-   .menu .offer-text a {
-    font-family: "Montserrat";
-    font-weight: 400;
-    text-decoration: none;
-    color: inherit;
-    font-size: 15px;
+    .menu > .container > .row > .offer-text > a {
+        font-family: "Montserrat";
+        font-weight: 400;
+        text-decoration: none;
+        color: inherit;
+        font-size: 15px;
    }
 
-   .menu .middle-links {
+   .menu > .container > .row > .address > button{
+        text-align: left;
+        line-height: 15px;
+        background: transparent;
+        border: 1px solid #808080ad;
+        border-radius: 2px;
+        font-family: 'Roboto';
+        cursor: pointer;
+        font-size: 14px;
+        position: absolute;
+        margin-top: -12px;
+   }
+
+   .menu > .container > .row > .address > button > small {
+       display: block;
        color: #33333399;
    }
 
-   .menu .middle-links ul, .menu .right-links ul {
+   .menu > .container > .row > .middle-links {
+       color: #33333399;
+   }
+
+   .menu > .container > .row > .middle-links > ul, 
+   .menu > .container > .row > .right-links > ul {
        list-style-type: none;
+       font-family: 'Roboto';
+       font-size: 13.5px;
        padding:0;
        margin: 0;
    }
 
-   .menu .middle-links ul li, .menu .right-links ul li{
+   .menu > .container > .row > .middle-links > ul > li,
+   .menu > .container > .row > .right-links > ul > li {
         display: inline;
-        font-size: 13px;
-        margin-right: 12.5px;
+        margin-right: 11px;
    }
 
-   .menu .middle-links ul li:last-child, .menu .right-links ul li:last-child {
+   .menu > .container > .row > .middle-links > ul > li:last-child,
+   .menu > .container > .row > .right-links > ul > li:last-child {
        margin-right: 0;
    }
 
-   .menu .middle-links ul li a, .menu .right-links ul li a {
+   .menu > .container > .row > .middle-links > ul > li > a,
+   .menu > .container > .row > .right-links > ul > li > a {
     text-decoration: none !important;
     color: inherit;
    }
+
+   .dropdown-link:hover + .dropdown-content, 
+   .dropdown-content:hover {
+       display: block !important;
+   }
+
+   .menu > .container > .row > .middle-links > ul > li > .dropdown-content,
+   .menu > .container > .row > .right-links > ul > li > .dropdown-content {
+       margin-top: 12px;
+       margin-left: -40px;
+
+       display: none;
+       position: absolute;
+       color: white;
+       background-color: #333;
+       min-width: 220px;
+       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+       z-index: 1;  
+       list-style-type: none;
+       padding: 0;
+   }
+
+   .menu > .container > .row > .right-links > ul > li > .dropdown-content {
+       background: white;
+   }
+
+   .menu > .container > .row > .middle-links > ul > li > .dropdown-content::before,
+   .menu > .container > .row > .right-links > ul > li > .dropdown-content::before {
+        margin-top: -11px;
+        margin-left: 60px;
+        width: 0; 
+        height: 0; 
+        border-left: 12px solid transparent;
+        border-right: 12px solid transparent;
+        border-bottom: 12px solid #333;
+        content: '';
+        position: absolute;
+    }
+
+    .menu > .container > .row > .right-links > ul > li > .dropdown-content::before {
+        margin-left: -80px;
+        margin-top: -12px;
+        border-bottom: 12px solid white;
+    }
+
+    .menu > .container > .row > .middle-links > ul > li > .dropdown-content::after,
+    .menu > .container > .row > .right-links > ul > li > .dropdown-content::after {
+        margin-top: -95%;
+        width: 100%; 
+        height: 15px; 
+        background: transparent;
+        content: '';
+        position: absolute;
+    }
+
+    .menu > .container > .row > .right-links > ul > li > .dropdown-content::after {
+        margin-left: -100%;
+        margin-top: -90%;
+        height: 20px; 
+    }
+
+   .menu > .container > .row > .middle-links > ul > li > .dropdown-content > li,
+   .menu > .container > .row > .right-links > ul > li > .dropdown-content > li {
+       width: 100%;
+    }
+
+    .menu > .container > .row > .middle-links > ul > li > .dropdown-content > li:hover,
+    .menu > .container > .row > .right-links > ul > li > .dropdown-content > li:hover {
+       background: #3483fa;
+    }
+
+    .menu > .container > .row > .right-links > ul > li > .dropdown-content > li:hover {
+       background: #f5f5f5;
+     }
+
+    .menu > .container > .row > .middle-links > ul > li > .dropdown-content > li > a,
+    .menu > .container > .row > .right-links > ul > li > .dropdown-content > li > a {
+       text-decoration: none;
+       color: white;
+       font-size: 13.5px;
+       font-family: 'Roboto';
+       display: block;
+       padding: 8px 40px;
+    }
+
+    .menu > .container > .row > .right-links > ul > li > .dropdown-content > li > a {
+       color: #333;
+    }
+
+    .menu > .container:last-child > .row > .menu-toggle > a {
+        cursor: pointer;
+    }
+
+    .menu > .container > .row > .right-links > ul > li:first-child > a > img {
+        width: 20px;
+        margin-top: -2px;
+    }
+
+    .menu > .container:last-child > .row > .search-bar > form > input[type="text"]{
+        width: 100%;
+    }
+
+    .menu > .container:last-child > .row > #hidden-menu {
+        display: none;
+        background: white;
+        margin-top: 8px;
+        padding-top: 20px;
+    }
+
+    .menu > .container:last-child > .row > #hidden-menu > ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .menu > .container:last-child > .row > #hidden-menu > ul > li {
+        font-family: 'Montserrat';
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    .menu > .container:last-child > .row > #hidden-menu > ul > li > a {
+        padding: 10px 25px;
+        display: block;
+        text-decoration: none;
+    }
+
+    .menu > .container:last-child > .row > #hidden-menu > ul > li:hover {
+        background-color: #f7f7f7;
+    }
+
+    @media (min-width: 993px) and (max-width:1199px) {
+        .hidden-under-large {
+            display: none;
+            margin-right: 0px !important;
+        }
+    }
+
+    @media (max-width: 992px){
+        .menu > .container:first-child {
+            display: none;
+        }
+
+        .menu > .container:last-child {
+            display: block;
+        }
+
+        .menu > .container > .row:first-child {
+            margin-bottom: 0px;
+        }
+    }
+
+    @media (max-width: 992px) and (min-width: 768px) {
+        .menu > .container > .row > .col-2 > .logo {
+            max-width: 50px !important;
+            margin-top: 5px;
+        }
+
+        .menu > .container:last-child {
+            display: block;
+            max-width: 100%;
+        }
+
+        .menu > .container:last-child > .row > .menu-toggle > a > img {
+            margin-top: 5px;
+        }
+
+        .menu > .container:last-child > .row > #hidden-menu {
+            margin-bottom: -12px;
+        }
+    }
+
+    @media (max-width: 767px) and (min-width: 578px) {
+        .menu > .container > .row > .col-2 > .logo {
+            max-width: 70% !important;
+            margin-top: 3px;
+        }
+    }
+
+    @media (max-width: 767px) {
+
+        .menu > .container:last-child {
+            display: block;
+            max-width: 100%;
+        }
+
+        .menu > .container:last-child > .row > .menu-toggle > a > img {
+            margin-top: 5px;
+        }
+
+        .menu > .container:last-child > .row > #hidden-menu {
+            margin-bottom: -20px;
+        }
+    }

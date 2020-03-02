@@ -1,3 +1,7 @@
+body {
+    background: #ededed
+}
+
 .spacer-sm {
     padding-top: 30px;
 }
@@ -23,4 +27,10 @@
 
 .social-icons a {
     text-decoration: none;
+}
+
+@media (max-width: 992px){
+    .social-icons {
+        padding-top: 0px;
+    }
 }

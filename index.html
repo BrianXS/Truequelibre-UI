@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="./css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="./css/truequelibre.css">
     <link rel="stylesheet" href="./css/demo-styles.css">
-    
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900|Montserrat:300,400,500,600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -19,7 +20,7 @@
             <div class="col-3">
                 <img class="img-fluid logo" src="./img/logo.png" alt="">
             </div>
-            <div class="offset-8 col-1 social-icons">
+            <div class="offset-lg-8 offset-7 col-lg-1 social-icons col-md-2 col-sm-2">
                 <a href="https://www.facebook.com/brian.jerez.3998" target="blank">
                     <img src="./img/facebook.png" alt="">
                 </a>
@@ -51,24 +52,61 @@
                 </div>
                 <div class="col-4 text-right offer-text">
                     <a href="#">
-                        Especial Tecnologia | Hasta 50% OFF
+                        <img src="./img/icons/screen.png" alt="">
+                        &nbsp;
+                        <span>Especial Tecnologia | Hasta 50% OFF</span>
                     </a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-2 address">
-                    <a href="#">
+                    <button>
+                        <small>Ingresa Tu</small>
                         Ubicacion
-                    </a>
+                    </button>
                 </div>
                 <div class="col-6 middle-links">
                     <ul>
-                        <li><a href="#">Categorias</a></li>
-                        <li><a href="#">Historial</a></li>
+                        <li>
+                            <a class="dropdown-link" href="#">Categorias</a>
+                            <ul class="dropdown-content">
+                                <li>
+                                    <a href="#">
+                                        Vehiculos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Tecnologia
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    Hogar y Electrodomesticos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Deportes y Aire Libre
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Belleza y Cuidado Personal
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Relojes y Joyas
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a class="hidden-under-large" href="#">Historial</a></li>
                         <li><a href="#">Tiendas oficiales</a></li>
                         <li><a href="#">Ofertas de la semana</a></li>
                         <li><a href="#">Vender</a></li>
-                        <li><a href="#">Ayuda/PQR</a></li>
+                        <li><a href="#">Ayuda<span class="hidden-under-large">/PQR</span></a></li>
                     </ul>
                 </div>
                 <div class="col-4 right-links text-right">
@@ -80,6 +118,179 @@
                 </div>
             </div>
         </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-2 col-md-1">
+                    <img class="img-fluid logo" src="./img/logo-small.png" alt="">
+                </div>
+                <div class="col-8 col-md-10 search-bar">
+                    <form>
+                        <input placeholder="Busca productos marcas y mas..." type="text">
+                    </form>
+                </div>
+                <div class="col-2 col-md-1 menu-toggle">
+                    <a href="#">
+                        <img class="img-fluid" src="./img/icons/menu.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
     </header>
+    <br>
+    <header class="menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img class="img-fluid logo" src="./img/logo.png" alt="">
+                </div>
+                <div class="col-6 search-bar">
+                    <form>
+                        <input type="text" placeholder="Busca productos, marcas y mas...">
+                        <button>Q</button>
+                    </form>
+                </div>
+                <div class="col-4 text-right offer-text">
+                    <a href="#">
+                        <img src="./img/icons/screen.png" alt="">
+                        &nbsp;
+                        <span>Especial Tecnologia | Hasta 50% OFF</span>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2 address">
+                    <button>
+                        <small>Ingresa Tu</small>
+                        Ubicacion
+                    </button>
+                </div>
+                <div class="col-6 middle-links">
+                    <ul>
+                        <li>
+                            <a class="dropdown-link" href="#">Categorias</a>
+                            <ul class="dropdown-content">
+                                <li>
+                                    <a href="#">
+                                        Vehiculos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Tecnologia
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    Hogar y Electrodomesticos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Deportes y Aire Libre
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Belleza y Cuidado Personal
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Relojes y Joyas
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a class="hidden-under-large" href="#">Historial</a></li>
+                        <li><a href="#">Tiendas oficiales</a></li>
+                        <li><a href="#">Ofertas de la semana</a></li>
+                        <li><a href="#">Vender</a></li>
+                        <li><a href="#">Ayuda<span class="hidden-under-large">/PQR</span></a></li>
+                    </ul>
+                </div>
+                <div class="col-4 right-links text-right">
+                    <ul>
+                        <li>
+                            <a class="dropdown-link" href="#">
+                                <img src="./img/icons/account.png" alt="">
+                                Trocador
+                            </a>
+                            <ul class="dropdown-content">
+                                <li>
+                                    <a href="#">
+                                        Compras
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Ventas
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Mis Datos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Seguridad
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        Salir
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Mis Compras</a></li>
+                        <li><a href="#">Favoritos</a></li>
+                        <li><a href="#">N</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-2 col-md-1">
+                    <img class="img-fluid logo" src="./img/logo-small.png" alt="">
+                </div>
+                <div class="col-8 col-md-10 search-bar">
+                    <form>
+                        <input placeholder="Busca productos marcas y mas..." type="text">
+                    </form>
+                </div>
+                <div class="col-2 col-md-1 menu-toggle">
+                    <a onclick="toggleMainMenu()">
+                        <img class="img-fluid" src="./img/icons/menu.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" id="hidden-menu">
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="">Notificaciones</a></li>
+                        <li><a href="">Mis Compras</a></li>
+                        <li><a href="">Favoritos</a></li>
+                        <li><a href="">Mi Cuenta</a></li>
+                        <li><a href="">Historial</a></li>
+                        <li><a href="">Vender</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Categorias</a></li>
+                        <li><a href="">Ofertas de la semana</a></li>
+                        <li><a href="">Tiendas oficiales</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Ayuda/PQR</a></li>
+                    </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script src="./js/main.js"></script>
 </body>
 </html>
