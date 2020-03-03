@@ -6,7 +6,7 @@
  * 
  * 1. Utilities
  * 2. Menus
- *
+ * 3. Carousel
  */
 
 
@@ -336,4 +336,36 @@
         .menu > .container:last-child > .row > #hidden-menu {
             margin-bottom: -20px;
         }
+    }
+
+/*===========================
+   3. Carousel
+============================ */
+
+    .carousel {
+        width: 100%;
+    }
+    
+    .carousel > .slide {
+        display: none;
+    }
+
+    .carousel > .slide:first-child {
+        display: block;
+    }
+
+    .carousel > .navigation {
+        position: absolute;
+        cursor: pointer;
+        margin-top: -13%;
+        padding: 30px 15px;
+        background: white;
+        border-radius: 0 5px 5px 0;
+        box-shadow: 0 1px 1px 0 black;
+        
+    }
+
+    .carousel > .navigation:last-child {
+        border-radius: 5px 0 0 5px;
+        right: 0;
     }
