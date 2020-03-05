@@ -1,3 +1,5 @@
+//Icons
+
 //Responsive Menu
 function toggleMainMenu() {
     var toggeableMenu = document.getElementById("hidden-menu");

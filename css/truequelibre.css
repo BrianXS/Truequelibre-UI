@@ -356,9 +356,10 @@
 
     .carousel > .navigation {
         position: absolute;
+        font-size: 10px;
         cursor: pointer;
         margin-top: -13%;
-        padding: 30px 15px;
+        padding: 30px 6px;
         background: white;
         border-radius: 0 5px 5px 0;
         box-shadow: 0 1px 1px 0 black;
@@ -369,3 +370,23 @@
         border-radius: 5px 0 0 5px;
         right: 0;
     }
+
+    .carousel > .navigation-right  ion-icon {
+        font-size: 32px;
+        color: #3483fa;
+        --ionicon-stroke-width: 1px !important;
+    }
+
+    .carousel > .navigation-left  ion-icon {
+        font-size: 32px;
+        color: #3483fa;
+        --ionicon-stroke-width: 16px;
+    }
+
+    ion-icon {
+        --ionicon-stroke-width: 16px;
+      }
+      
+
+
+    
