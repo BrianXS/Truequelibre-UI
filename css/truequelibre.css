@@ -7,6 +7,7 @@
  * 1. Utilities
  * 2. Menus
  * 3. Carousel
+ * 4. Payment details
  */
 
 
@@ -391,4 +392,92 @@
         --ionicon-stroke-width: 16px;
       }
 
+/*===========================
+   3. Payment details
+============================ */
+
+.payment-details {
+    padding-top: 15px;
+    padding-bottom: 13px;
+    background: white;
+    box-shadow: 0 1px 1px 0px #d8d8d8;
+}
+.payment-details > .row > .col-8,
+.payment-details > .row > .col-9,
+.payment-details > .row > .col-7 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.payment-details > .row > .col-8 > .col-12:first-child,
+.payment-details > .row > .col-9 > .col-12:first-child,
+.payment-details > .row > .col-7 > .col-12:first-child {
+    font-family: "Montserrat";
+    font-weight: 500;
+    margin-top: 2px;
+    font-size: 15px;
+    margin-bottom: -15px;
+    color: #070717;
+    padding-right: 0px;
+}
+
+.payment-details > .row > .col-8 > .col-12:last-child,
+.payment-details > .row > .col-9 > .col-12:last-child,
+.payment-details > .row > .col-7 > .col-12:last-child {
+    font-family: "Roboto";
+    font-size: 13.5px;
+}
+
+.payment-details > .row > .col-8 > .col-12:last-child > a,
+.payment-details > .row > .col-9 > .col-12:last-child > a,
+.payment-details > .row > .col-7 > .col-12:last-child > a{
+    text-decoration: none;
+}
+
+.payment-details-left {
+    border-radius: 5px 0px 0px 5px;
+}
+
+.payment-details-right {
+    border-radius: 0px 5px 5px 0px;
+}
+
+.payment-details-icon {
+    border-radius: 100%;
+    border: 1px solid #d3d3d3b8;
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+}
+
+.payment-details-icon > img {
+    width: 100%;
+    max-width: 40px;
+}
+
+@media (max-width: 575px) {
+    .payment-details-left {
+        border-radius: 0px 0px 0px 0px;
+        border-bottom: 1px solid lightgray;
+    }
     
+    .payment-details-right {
+        border-radius: 0px 0px 0px 0px;
+    }
+
+    .payment-details-icon {
+        border: none;
+    }
+
+    .payment-details > .row > .col-8 > .col-12:first-child, 
+    .payment-details > .row > .col-9 > .col-12:first-child, 
+    .payment-details > .row > .col-7 > .col-12:first-child{
+        margin-top: 6px;
+        margin-bottom: -3px;
+
+    }
+
+    .last-payment-sm-fix {
+        margin-top: 0px !important;
+    }
+}
